@@ -77,8 +77,7 @@
     <div id="inicio" class="header_slider">
       <div class="single_slider bg_cover d-flex align-items-center"
            id="hero-section"
-           data-variable='["/assets/images/hero/cisnes1.jpg","/assets/images/hero/coigue-viejo1.jpg","/assets/images/hero/tinaja.jpg"]'
-           style="background-image: url('/assets/images/hero/coigue-viejo1.jpg');">
+           data-variable='["{{ "/assets/images/hero/cisnes1.jpg" | relative_url }}","{{ "/assets/images/hero/coigue-viejo1.jpg" | relative_url }}","{{ "/assets/images/hero/tinaja.jpg" | relative_url }}"]'>
         <div class="container hero-text">
           <div class="row">
             <div class="col-lg-6 col-md-8">
@@ -107,8 +106,7 @@
     <div class="about_wrapper">
       <div class="about_image bg_cover"
            id="about-section"
-           data-variable='["/assets/images/about/bote-desde-dron.jpg","/assets/images/about/cisnes2.jpg","/assets/images/about/curanto1.jpg"]'
-           style="background-image: url('/assets/images/about/cisnes2.jpg');">
+           data-variable='["{{ "/assets/images/about/bote-desde-dron.jpg" | relative_url }}","{{ "/assets/images/about/cisnes2.jpg" | relative_url }}","{{ "/assets/images/about/curanto1.jpg" | relative_url }}"]'>
       </div>
       <div class="container">
         <div class="row justify-content-end">
@@ -388,8 +386,8 @@
       <div class="row">
         <div class="col-lg-12" style="height: 40rem">
           <div id="places-section" class="single_slider bg_cover d-flex align-items-center rounded"
-               data-variable='["/assets/images/places/en-el-bosque.jpg","/assets/images/places/flor-en-la-mesa.jpg","/assets/images/places/matrimonial-cafe-velador-flor1.jpg","/assets/images/places/matrimonial-lila-velador-flor.jpg"]'
-               style="background-image: url('/assets/images/places/flor-en-la-mesa.jpg'); height: 40rem; border-radius: 5rem;">
+               data-variable='["{{ "/assets/images/places/en-el-bosque.jpg" | relative_url }}","{{ "/assets/images/places/flor-en-la-mesa.jpg" | relative_url }}","{{ "/assets/images/places/matrimonial-cafe-velador-flor1.jpg" | relative_url }}","{{ "/assets/images/places/matrimonial-lila-velador-flor.jpg" | relative_url }}"]'
+               style="height: 40rem; border-radius: 5rem;">
           </div>
         </div>
       </div>

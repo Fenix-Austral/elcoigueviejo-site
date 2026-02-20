@@ -4,7 +4,7 @@ description: Turismo · Gastronomía · Entretención en Isla Quihua, Calbuco, C
 author: El Coigue Viejo
 email: contacto@elcoigueviejo.cl
 url: "https://elcoigueviejo.cl"
-baseurl: ""
+baseurl: "/elcoigueviejo-v2"
 lang: es
 timezone: America/Santiago
 encoding: utf-8
