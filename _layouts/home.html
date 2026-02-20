@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'es' }}">
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.title }} - {{ site.description }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+
+  <!-- LineIcons -->
+  <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+
+  <!-- Bootstrap 4.5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS (WOW.js) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="{{ '/assets/css/elcoigue.css' | relative_url }}">
+</head>
+<body>
+
+  <!--====== PRELOADER ======-->
+  <div class="preloader">
+    <div class="loader">
+      <div class="ytp-spinner">
+        <div class="ytp-spinner-container">
+          <div class="ytp-spinner-rotator">
+            <div class="ytp-spinner-left"><div class="ytp-spinner-circle"></div></div>
+            <div class="ytp-spinner-right"><div class="ytp-spinner-circle"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--====== HEADER / NAV ======-->
+  <section class="header_area">
+    <div class="header_navbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="#inicio">
+                <img src="{{ '/assets/images/coigue_logo.png' | relative_url }}" alt="Logo El Coigue Viejo" style="height:100px;">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse"
+                      data-target="#navbarNav" aria-controls="navbarNav"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse sub-menu-bar" id="navbarNav">
+                <ul id="nav" class="navbar-nav ml-auto">
+                  <li class="nav-item active"><a class="page-scroll" href="#inicio">Inicio</a></li>
+                  <li class="nav-item"><a class="page-scroll" href="#nosotros">Nosotros</a></li>
+                  <li class="nav-item"><a class="page-scroll" href="#servicios">Servicios</a></li>
+                  <li class="nav-item"><a class="page-scroll" href="#espacios">Espacios</a></li>
+                  <li class="nav-item"><a class="page-scroll" href="#historias">Historias</a></li>
+                  <li class="nav-item"><a class="page-scroll" href="#contacto">Contacto</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--====== HERO ======-->
+    <div id="inicio" class="header_slider">
+      <div class="single_slider bg_cover d-flex align-items-center"
+           id="hero-section"
+           data-variable='["/assets/images/hero/cisnes1.jpg","/assets/images/hero/coigue-viejo1.jpg","/assets/images/hero/tinaja.jpg"]'
+           style="background-image: url('/assets/images/hero/coigue-viejo1.jpg');">
+        <div class="container hero-text">
+          <div class="row">
+            <div class="col-lg-6 col-md-8">
+              <div class="slider_content">
+                <h2 class="slider_title wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                  Turismo<br>Gastronomía<br><span>Entretención</span>
+                </h2>
+                <p class="wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                  Conozca la Isla Quihua en la comuna de Calbuco y viva de una forma especial
+                  lo que para nosotros es cotidiano. Visite nuestros hermosos canales, volcanes
+                  y un patrimonio histórico cultural único.
+                </p>
+                <a href="#contacto" class="main-btn wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                  Reserve aquí
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--====== NOSOTROS ======-->
+  <section id="nosotros" class="about_area pt-50 pb-50">
+    <div class="about_wrapper">
+      <div class="about_image bg_cover"
+           id="about-section"
+           data-variable='["/assets/images/about/bote-desde-dron.jpg","/assets/images/about/cisnes2.jpg","/assets/images/about/curanto1.jpg"]'
+           style="background-image: url('/assets/images/about/cisnes2.jpg');">
+      </div>
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-lg-6">
+            <div class="about_content">
+              <div class="section_title">
+                <h3 class="title">Quienes son <br><span>El Coigue Viejo</span></h3>
+                <p>Somos un emprendimiento familiar ubicado en Isla Quihua, comuna de Calbuco (Chile).
+                  Nuestro proyecto comenzó el año 2021, con la construcción de una casa habitación,
+                  con capacidad para 10 personas. Donde se reciben los turistas que vienen a visitarnos.</p>
+                <p>Nuestro espacio es un legado familiar, mantenido, cuidado y valorado durante los
+                  años, donde encontrarán espacio a campo libre para caminar, cancha de fútbol y un
+                  centro de eventos equipado para todo tipo de actividades.</p>
+                <p>El objetivo principal del proyecto es dar a conocer el lugar, gastronomía chilota
+                  campesina y nuestras tradiciones.</p>
+                <p>El sello de El Coigue Viejo es el compromiso con cada uno de nuestros visitantes,
+                  entregando un grato servicio y de calidad.</p>
+              </div>
+              <a href="#contacto" class="main-btn">Contáctanos</a>
+            </div>
+
+            <!-- Contadores -->
+            <div class="about_counter d-flex flex-wrap">
+              <div class="single_counter counter_1 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                <div class="counter_wrapper">
+                  <p>Nuestra isla tiene</p>
+                  <span class="counter">29.5</span>
+                  <p>kilómetros²</p>
+                </div>
+              </div>
+              <div class="single_counter counter_2 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                <div class="counter_wrapper">
+                  <p>Somos</p>
+                  <span class="counter">1784</span>
+                  <p>habitantes</p>
+                </div>
+              </div>
+              <div class="single_counter counter_2 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                <div class="counter_wrapper">
+                  <p>Desde Puerto Montt</p>
+                  <span class="counter">56</span>
+                  <p>kilómetros</p>
+                </div>
+              </div>
+              <div class="single_counter counter_1 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="1.1s">
+                <div class="counter_wrapper">
+                  <p>Desde Santiago</p>
+                  <span class="counter">1087</span>
+                  <p>kilómetros</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--====== SERVICIOS ======-->
+  <section id="servicios" class="services_area pt-50 pb-50">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="section_title text-center pb-25">
+            <h3 class="title">Nuestros servicios</h3>
+            <p>Disfrute de nuestros servicios en un paisaje rodeado de árboles,
+              donde abundan los coigues, arrayanes y avellanos, junto con una bella vista hacia el mar.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+        <!-- Comidas típicas -->
+        <div class="col-lg-3 col-sm-6">
+          <div class="single_service mt-30 text-center wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+            <!-- Modal Comidas -->
+            <div class="modal fade" id="comidasSlideshow" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div id="comidasCarousel" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#comidasCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#comidasCarousel" data-slide-to="1"></li>
+                        <li data-target="#comidasCarousel" data-slide-to="2"></li>
+                        <li data-target="#comidasCarousel" data-slide-to="3"></li>
+                        <li data-target="#comidasCarousel" data-slide-to="4"></li>
+                        <li data-target="#comidasCarousel" data-slide-to="5"></li>
+                        <li data-target="#comidasCarousel" data-slide-to="6"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active"><img class="d-block w-100" src="{{ '/assets/images/services/comidas/curanto2.jpg' | relative_url }}" alt="Curanto 2"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="{{ '/assets/images/services/comidas/curanto3.jpg' | relative_url }}" alt="Curanto 3"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="{{ '/assets/images/services/comidas/curanto4.jpg' | relative_url }}" alt="Curanto 4"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="{{ '/assets/images/services/comidas/curanto5.jpg' | relative_url }}" alt="Curanto 5"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="{{ '/assets/images/services/comidas/curanto6.jpg' | relative_url }}" alt="Curanto 6"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="{{ '/assets/images/services/comidas/curanto7.jpg' | relative_url }}" alt="Curanto 7"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="{{ '/assets/images/services/comidas/curanto8.jpg' | relative_url }}" alt="Curanto 8"></div>
+                      </div>
+                      <a class="carousel-control-prev" href="#comidasCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                      </a>
+                      <a class="carousel-control-next" href="#comidasCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services_icon">
+              <a href="#" data-toggle="modal" data-target="#comidasSlideshow">
+                <i class="lni lni-coffee-cup"></i>
+              </a>
+            </div>
+            <div class="services_content">
+              <h4 class="title">Comidas típicas</h4>
+              <p>Curanto al hoyo, cazuelas, pescados de la zona, asados, pailas marina,
+                tortillas al rescoldo, milcaos y mucho más...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entretención -->
+        <div class="col-lg-3 col-sm-6">
+          <div class="single_service mt-30 text-center wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+            <!-- Modal Entretención -->
+            <div class="modal fade" id="entretencionSlideshow" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div id="entretencionCarousel" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#entretencionCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#entretencionCarousel" data-slide-to="1"></li>
+                        <li data-target="#entretencionCarousel" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active"><img class="d-block w-100" src="{{ '/assets/images/services/entretencion/bote-de-atras.jpg' | relative_url }}" alt="Bote de atrás"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="{{ '/assets/images/services/entretencion/bote-de-frente.jpg' | relative_url }}" alt="Bote de frente"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="{{ '/assets/images/services/entretencion/bote-de-lado.jpg' | relative_url }}" alt="Bote de lado"></div>
+                      </div>
+                      <a class="carousel-control-prev" href="#entretencionCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                      </a>
+                      <a class="carousel-control-next" href="#entretencionCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services_icon">
+              <a href="#" data-toggle="modal" data-target="#entretencionSlideshow">
+                <i class="lni lni-ship"></i>
+              </a>
+            </div>
+            <div class="services_content">
+              <h4 class="title">Entretención</h4>
+              <p>Paseos en lancha, kayak, cancha de fútbol, celebración de cumpleaños en salón de eventos.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Relajación -->
+        <div class="col-lg-3 col-sm-6">
+          <div class="single_service mt-30 text-center wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.6s">
+            <!-- Modal Relajación -->
+            <div class="modal fade" id="relajacionSlideshow" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div id="relajacionCarousel" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#relajacionCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#relajacionCarousel" data-slide-to="1"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active"><img class="d-block w-100" src="{{ '/assets/images/services/relajacion/bote-de-lado.jpg' | relative_url }}" alt="Relajación 1"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="{{ '/assets/images/services/relajacion/flor-en-la-ventana.jpg' | relative_url }}" alt="Flor en la ventana"></div>
+                      </div>
+                      <a class="carousel-control-prev" href="#relajacionCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                      </a>
+                      <a class="carousel-control-next" href="#relajacionCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services_icon">
+              <a href="#" data-toggle="modal" data-target="#relajacionSlideshow">
+                <i class="lni lni-trees"></i>
+              </a>
+            </div>
+            <div class="services_content">
+              <h4 class="title">Relajación</h4>
+              <p>Tinaja para 6 personas con hidromasaje, parque habilitado para disfrutar
+                la naturaleza, caminatas a la orilla de la playa.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alojamiento -->
+        <div class="col-lg-3 col-sm-6">
+          <div class="single_service mt-30 text-center wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.8s">
+            <!-- Modal Alojamiento -->
+            <div class="modal fade" id="alojamientoSlideshow" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div id="alojamientoCarousel" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#alojamientoCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#alojamientoCarousel" data-slide-to="1"></li>
+                        <li data-target="#alojamientoCarousel" data-slide-to="2"></li>
+                        <li data-target="#alojamientoCarousel" data-slide-to="3"></li>
+                        <li data-target="#alojamientoCarousel" data-slide-to="4"></li>
+                        <li data-target="#alojamientoCarousel" data-slide-to="5"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active"><img class="d-block w-100" src="{{ '/assets/images/services/alojamiento/bano.jpg' | relative_url }}" alt="Baño"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="{{ '/assets/images/services/alojamiento/habitacion-doble-con-logo.jpg' | relative_url }}" alt="Habitación doble"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="{{ '/assets/images/services/alojamiento/habitacion-doble.jpg' | relative_url }}" alt="Habitación doble 2"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="{{ '/assets/images/services/alojamiento/matrimonial-cafe-velador-bano.jpg' | relative_url }}" alt="Matrimonial 1"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="{{ '/assets/images/services/alojamiento/matrimonial-cafe-velador-flor2.jpg' | relative_url }}" alt="Matrimonial 2"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="{{ '/assets/images/services/alojamiento/matrimonial-lila-ventana.jpg' | relative_url }}" alt="Matrimonial lila"></div>
+                      </div>
+                      <a class="carousel-control-prev" href="#alojamientoCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                      </a>
+                      <a class="carousel-control-next" href="#alojamientoCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services_icon">
+              <a href="#" data-toggle="modal" data-target="#alojamientoSlideshow">
+                <i class="lni lni-apartment"></i>
+              </a>
+            </div>
+            <div class="services_content">
+              <h4 class="title">Alojamiento</h4>
+              <p>Cabaña para 8-10 personas con amplios dormitorios, living comedor y cocina americana.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--====== ESPACIOS ======-->
+  <section id="espacios" class="gallery_area pt-50 pb-50">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="section_title text-center pb-50">
+            <h3 class="title">Nuestros espacios</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12" style="height: 40rem">
+          <div id="places-section" class="single_slider bg_cover d-flex align-items-center rounded"
+               data-variable='["/assets/images/places/en-el-bosque.jpg","/assets/images/places/flor-en-la-mesa.jpg","/assets/images/places/matrimonial-cafe-velador-flor1.jpg","/assets/images/places/matrimonial-lila-velador-flor.jpg"]'
+               style="background-image: url('/assets/images/places/flor-en-la-mesa.jpg'); height: 40rem; border-radius: 5rem;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--====== HISTORIAS ======-->
+  <section id="historias" class="blog_area pt-50 pb-50">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="section_title text-center pb-25">
+            <h3 class="title">Nuestra historia</h3>
+            <p>Calbuco, en lengua indígena, isla de aguas azules, es una ciudad y comuna de la zona sur de Chile,
+              localizada en la Décima Región de Los Lagos. Fue fundada hace más de 400 años, por Don Francisco
+              Hernández Ortiz, llamada originalmente como "Real fuerte de San Miguel".</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="single_blog mt-30">
+            <div class="blog_content pt-0 mb-10">
+              <h4 class="blog_title">Archipiélago de Calbuco.</h4>
+              <p>Calbuco es un centro urbano que se sitúa en la isla del mismo nombre, conectado al continente
+                por un pedraplén. Es la ciudad más antigua de la provincia y comparte vínculos históricos con Chiloé.
+                Su archipiélago está compuesto por 14 islas dentro de las cuales se encuentra nuestra querida Isla de Quihua.</p>
+            </div>
+            <div class="blog_image mb-10">
+              <img src="{{ '/assets/images/history/isla-desde-dron.png' | relative_url }}" alt="Isla Kaikué-Lagartija" style="border-radius:0.5rem">
+            </div>
+            <p>En la imagen la Isla Kaikué-Lagartija, santuario de la naturaleza que sustenta una alta diversidad de
+              fauna y flora, terrestre y marina-costera. Uno de los pocos sitios que mantiene su condición natural y
+              buen estado de conservación.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="single_blog d-sm-flex mt-30">
+            <div class="blog_image">
+              <img src="{{ '/assets/images/history/bote-de-frente.jpg' | relative_url }}" alt="Bote en Isla Quihua" style="border-radius:0.5rem">
+            </div>
+            <div class="blog_content blog_content_2 media-body">
+              <h4 class="blog_title">Isla de Quihua</h4>
+              <p>Quihua es la tercera isla más grande del archipiélago de Calbuco, después de Puluqui y Huar.
+                Conectada al continente mediante un pedraplén, no es necesario navegar para visitar nuestra isla.</p>
+              <a href="#contacto" class="more">Visítanos</a>
+            </div>
+          </div>
+          <div class="single_blog d-sm-flex mt-30">
+            <div class="blog_image">
+              <img src="{{ '/assets/images/history/coigue-viejo-2.jpg' | relative_url }}" alt="El coigue viejo" style="border-radius:0.5rem">
+            </div>
+            <div class="blog_content blog_content_2 media-body">
+              <h4 class="blog_title">¿Por qué coigue viejo?</h4>
+              <p>Este nombre se inspiró en un antiguo coigue que es parte de nuestro paisaje.
+                Le hacen compañía algunos arrayanes y avellanos.</p>
+              <a href="#contacto" class="more">Contáctanos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--====== CONTACTO ======-->
+  <section id="contacto" class="contact_area pt-50 pb-50">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="section_title text-center pb-25">
+            <h3 class="title">Contáctanos</h3>
+            <p>Cuéntanos qué servicios necesitas, cantidad de personas y días de estancia.</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact_form">
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="{{ site.web3forms_key }}">
+          <input type="hidden" name="subject" value="Nuevo contacto desde El Coigue Viejo">
+          <input type="hidden" name="from_name" value="El Coigue Viejo - Sitio Web">
+          <input type="hidden" name="redirect" value="false">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="single_form">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="single_form">
+                <input type="tel" name="telefono" placeholder="Teléfono">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="single_form">
+                <input type="email" name="email" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="single_form">
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="single_form">
+                <button type="submit" class="main-btn">Enviar mensaje</button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div id="form-success" class="alert alert-success mt-3" style="display:none;">
+          ¡Mensaje enviado! Nos pondremos en contacto contigo pronto.
+        </div>
+        <div id="form-error" class="alert alert-danger mt-3" style="display:none;">
+          Hubo un error al enviar. Por favor, inténtalo de nuevo o escríbenos directamente.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--====== MAPA ======-->
+  <section id="map" class="pt-0 pb-0">
+    <iframe src="{{ site.maps_embed }}"
+            style="border:0; width:100%; height:40rem;"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!--====== FOOTER ======-->
+  <section id="footer" class="footer_area">
+    <div class="footer_widget pt-50 pb-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 order-md-1 order-lg-1">
+            <div class="footer_about mt-50">
+              <a href="#inicio">
+                <img src="{{ '/assets/images/coigue_logo.png' | relative_url }}" alt="Logo El Coigue Viejo">
+              </a>
+              <p>{{ site.address }}</p>
+              <ul class="social" style="width:100%;">
+                <li>
+                  <p>
+                    <a href="{{ site.whatsapp }}" target="_blank" style="background-color:#25D366;">
+                      <i class="lni lni-whatsapp"></i>
+                    </a>
+                    &nbsp;{{ site.phone }}
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 order-md-3 order-lg-2"></div>
+          <div class="col-lg-4 col-md-12 order-md-3 order-lg-3">
+            <div class="footer_link_wrapper d-flex flex-wrap">
+              <div class="footer_link mt-45">
+                <h4 class="footer_title">Mapa del sitio</h4>
+                <ul class="link">
+                  <li><a href="#inicio">Inicio</a></li>
+                  <li><a href="#nosotros">Nosotros</a></li>
+                  <li><a href="#servicios">Servicios</a></li>
+                  <li><a href="#espacios">Espacios</a></li>
+                  <li><a href="#historias">Historias</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-90" style="color:#fff;">
+        &copy; {{ 'now' | date: "%Y" }} {{ site.title }}. Todos los derechos reservados.
+      </p>
+    </div>
+  </section>
+
+  <!--====== BACK TO TOP ======-->
+  <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+  <!--====== SCRIPTS ======-->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+  <!-- Easing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- Waypoints + CounterUp -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <!-- WOW.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <!-- JS propio -->
+  <script src="{{ '/assets/js/elcoigue.js' | relative_url }}"></script>
+</body>
+</html>
