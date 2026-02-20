@@ -1,46 +1,55 @@
-# Jekyll Scaffolding - Plantilla Profesional con SEO
+# elcoigueviejo-v2 - Sitio web en Jekyll
 
-Plantilla profesional para generar sitios web con Jekyll, completamente optimizada para SEO.
+Sitio web desarrollado con Jekyll, optimizado para SEO y adaptado a la estructura de "El Coigüe Viejo".
 
 ## 🚀 Características
 
-- ✅ Estructura completa de Jekyll con layouts y includes
-- ✅ Optimización SEO con jekyll-seo-tag
-- ✅ Sitemap automático con jekyll-sitemap
-- ✅ Feed RSS con jekyll-feed
-- ✅ Estilos SASS con compresión
-- ✅ Diseño responsive y moderno
-- ✅ Post de ejemplo incluido
+- Estructura completa de Jekyll con layouts y includes
+- Optimización SEO con jekyll-seo-tag
+- Sitemap automático con jekyll-sitemap
+- Feed RSS con jekyll-feed
+- Estilos SASS y CSS personalizados
+- Diseño responsive y moderno
+- Ejemplo de post incluido
 
 ## 📁 Estructura del Proyecto
 
 ```
-jekyll-scaffolding/
+elcoigueviejo-v2/
 ├── _config.yml              # Configuración principal del sitio
 ├── Gemfile                  # Dependencias de Ruby
-├── .gitignore              # Archivos a ignorar en Git
-├── index.md                # Página de inicio
+├── index.md                 # Página de inicio
+├── about.md                 # Página "Sobre nosotros"
+├── blog.md                  # Página de blog
+├── contact.md               # Página de contacto
 │
-├── _layouts/               # Plantillas de diseño
-│   ├── default.html        # Layout base
-│   └── post.html           # Layout para posts
+├── _layouts/                # Plantillas de diseño
+│   ├── default.html         # Layout base
+│   ├── home.html            # Layout de inicio
+│   └── post.html            # Layout para posts
 │
-├── _includes/              # Componentes reutilizables
-│   ├── head.html           # Meta tags y SEO
-│   ├── header.html         # Cabecera del sitio
-│   └── footer.html         # Pie de página
+├── _includes/               # Componentes reutilizables
+│   ├── head.html            # Meta tags y SEO
+│   ├── header.html          # Cabecera del sitio
+│   └── footer.html          # Pie de página
 │
-├── _posts/                 # Publicaciones del blog
+├── _posts/                  # Publicaciones del blog
 │   └── 2026-02-12-bienvenido-a-jekyll.md
 │
-├── _sass/                  # Estilos SASS
-│   └── main.scss           # Estilos principales
+├── _sass/                   # Estilos SASS
+│   ├── _syntax.scss         # Resaltado de sintaxis
+│   └── main.scss            # Estilos principales
 │
-└── assets/                 # Recursos estáticos
-    ├── css/
-    │   └── styles.scss     # Archivo SCSS principal
-    ├── js/                 # JavaScript
-    └── images/             # Imágenes
+├── assets/                  # Recursos estáticos
+│   ├── css/
+│   │   ├── elcoigue.css     # CSS generado
+│   │   └── styles.scss      # SCSS principal
+│   ├── js/
+│   │   ├── elcoigue.js      # JS personalizado
+│   │   └── main.js          # JS principal
+│   └── images/              # Imágenes organizadas por secciones
+│
+└── _site/                   # Sitio generado (no editar manualmente)
 ```
 
 ## 🛠️ Instalación
@@ -54,27 +63,32 @@ jekyll-scaffolding/
 ### Pasos de Instalación
 
 1. **Clonar el repositorio**
+
    ```bash
-   git clone https://github.com/jcalistop/jekyll-scaffolding.git
-   cd jekyll-scaffolding
+   git clone https://github.com/USUARIO/elcoigueviejo-v2.git
+   cd elcoigueviejo-v2
    ```
 
 2. **Instalar Bundler**
+
    ```bash
    gem install bundler
    ```
 
 3. **Instalar dependencias**
+
    ```bash
    bundle install
    ```
 
 4. **Construir el sitio**
+
    ```bash
    bundle exec jekyll build
    ```
 
 5. **Servir el sitio localmente**
+
    ```bash
    bundle exec jekyll serve
    ```
@@ -83,17 +97,17 @@ jekyll-scaffolding/
 
 ## ⚙️ Configuración
 
-### _config.yml
+### \_config.yml
 
 Personaliza tu sitio editando `_config.yml`:
 
 ```yaml
-title: Mi Sitio Jekyll              # Título del sitio
-description: Un sitio profesional   # Descripción para SEO
-author: Tu Nombre                   # Tu nombre
-email: tu@email.com                 # Tu email
-url: "https://tudominio.com"       # URL de tu sitio
-baseurl: ""                        # Subdirectorio si aplica
+title: El Coigüe Viejo # Título del sitio
+description: Hostería y servicios turísticos en la Patagonia
+author: Tu Nombre # Tu nombre
+email: tu@email.com # Tu email
+url: "https://tudominio.com" # URL de tu sitio
+baseurl: "" # Subdirectorio si aplica
 ```
 
 ### Plugins Incluidos
@@ -107,18 +121,20 @@ baseurl: ""                        # Subdirectorio si aplica
 ### Crear un Nuevo Post
 
 1. Crea un archivo en `_posts/` con el formato:
+
    ```
    YYYY-MM-DD-titulo-del-post.md
    ```
 
 2. Agrega el Front Matter al inicio del archivo:
+
    ```yaml
    ---
    layout: post
    title: "Título de tu Post"
    date: 2026-02-12 20:00:00 -0000
    author: Tu Nombre
-   tags: [jekyll, tutorial]
+   tags: [blog, ejemplo]
    description: "Descripción para SEO"
    ---
    ```
@@ -147,7 +163,7 @@ Este es el contenido de mi post en **Markdown**.
 
 ## 🎨 Personalización de Estilos
 
-Los estilos están en `_sass/main.scss`. Puedes personalizar:
+Los estilos principales están en `_sass/main.scss` y `assets/css/styles.scss`. Puedes personalizar:
 
 - Colores
 - Tipografía
@@ -164,64 +180,39 @@ Ejemplo para cambiar el color principal:
 
 ## 🌐 Deployment
 
-### GitHub Pages
+Puedes desplegar el sitio en cualquier servicio de hosting estático, como:
 
-1. En tu repositorio de GitHub, ve a Settings > Pages
-2. Selecciona la rama `main` como fuente
-3. Tu sitio estará disponible en `https://tu-usuario.github.io/repositorio/`
-
-### Netlify
-
-1. Conecta tu repositorio a Netlify
-2. Configura el comando de build: `jekyll build`
-3. Directorio de publicación: `_site`
-
-### Otros Servicios
-
-El sitio puede desplegarse en cualquier servicio que soporte sitios estáticos:
+- GitHub Pages
+- Netlify
 - Vercel
 - Cloudflare Pages
 - AWS S3
 - Surge.sh
 
+Para GitHub Pages:
+
+1. Ve a Settings > Pages en tu repositorio
+2. Selecciona la rama `main` como fuente
+3. El sitio estará disponible en `https://tu-usuario.github.io/elcoigueviejo-v2/`
+
 ## 📄 Archivos Clave
 
-### _includes/head.html
+- `_includes/head.html`: Meta tags, SEO, favicon, enlaces CSS y feed
+- `_layouts/default.html`: Layout base con head, header, contenido y footer
+- `_layouts/home.html`: Layout para la página de inicio
+- `_layouts/post.html`: Layout para posts con título, metadata y tags
 
-Contiene todas las etiquetas SEO:
-- Meta tags viewport
-- Jekyll SEO tag
-- Enlace al CSS
-- Favicon
-- Feed RSS
-- URL canónica
-
-### _layouts/default.html
-
-Layout base que incluye:
-- Head (con SEO)
-- Header
-- Contenido principal
-- Footer
-
-### _layouts/post.html
-
-Layout para posts con:
-- Título y metadata
-- Contenido del post
-- Tags
-
-## 🔍 SEO Features
+## 🔍 SEO y Optimización
 
 El sitio incluye optimización automática para:
 
-- ✅ Meta tags Open Graph (Facebook)
-- ✅ Twitter Cards
-- ✅ Schema.org JSON-LD
-- ✅ Canonical URLs
-- ✅ Sitemap XML
-- ✅ Feed RSS/Atom
-- ✅ Compresión de CSS
+- Meta tags Open Graph (Facebook)
+- Twitter Cards
+- Schema.org JSON-LD
+- Canonical URLs
+- Sitemap XML
+- Feed RSS/Atom
+- Compresión de CSS
 
 ## 📚 Recursos Adicionales
 
@@ -230,23 +221,13 @@ El sitio incluye optimización automática para:
 - [Markdown Guide](https://www.markdownguide.org/)
 - [Liquid Template Language](https://shopify.github.io/liquid/)
 
-## 🤝 Contribuir
-
-Las contribuciones son bienvenidas. Por favor:
-
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
 ## 📝 Licencia
 
-Este proyecto está bajo la Licencia MIT.
+Este proyecto es privado y está prohibida su distribución.
 
 ## ✨ Autor
 
-**jcalistop**
+**Fénix Austral LTDA.**
 
 ---
 
