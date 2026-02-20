@@ -1,0 +1,73 @@
+<header class="site-header">
+  <div class="container">
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+
+      <button
+        class="nav-toggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span class="hamburger"></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a
+          href="{{ '/' | relative_url }}"
+          {%
+          if
+          page.url=""
+          ="/"
+          or
+          page.url=""
+          ="/index.html"
+          %}
+          class="active"
+          {%
+          endif
+          %}
+          >Inicio</a
+        >
+        <a
+          href="{{ '/about' | relative_url }}"
+          {%
+          if
+          page.url=""
+          ="/about/"
+          %}
+          class="active"
+          {%
+          endif
+          %}
+          >Acerca de</a
+        >
+        <a
+          href="{{ '/blog' | relative_url }}"
+          {%
+          if
+          page.url=""
+          ="/blog/"
+          %}
+          class="active"
+          {%
+          endif
+          %}
+          >Blog</a
+        >
+        <a
+          href="{{ '/contact' | relative_url }}"
+          {%
+          if
+          page.url=""
+          ="/contact/"
+          %}
+          class="active"
+          {%
+          endif
+          %}
+          >Contacto</a
+        >
+      </div>
+    </nav>
+  </div>
+</header>

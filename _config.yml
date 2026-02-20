@@ -1,0 +1,45 @@
+# Site settings
+title: Mi Sitio Jekyll
+description: Un sitio web profesional construido con Jekyll, optimizado para SEO
+author: Tu Nombre
+email: tu@email.com
+url: "https://tudominio.com"
+baseurl: ""
+lang: es
+timezone: America/Mexico_City
+encoding: utf-8
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Sass/SCSS settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Defaults para posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: "Tu Nombre"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
