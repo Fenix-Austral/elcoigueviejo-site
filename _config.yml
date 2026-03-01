@@ -14,7 +14,7 @@ phone: "+56 9 9538 5525"
 whatsapp: "https://wa.me/56995385525"
 address: "Sector rural Punta Quihua, Comuna de Calbuco, Región de Los Lagos - CHILE"
 maps_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22804.04313131036!2d-73.23020044305652!3d-41.748383132147595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96186f6d92d33227%3A0x9e6b388498415ff2!2sIsla%20Quihua!5e0!3m2!1ses-419!2scl!4v1674185855217!5m2!1ses-419!2scl"
-web3forms_key: "d5a6d04f-53a7-4733-8093-7c5149bb7974"
+web3forms_key: "" # Definir vía secret/variable de build; este valor quedará expuesto en el HTML generado
 
 # Build settings
 markdown: kramdown
