@@ -8,6 +8,7 @@ Gemfile.lock
 *.gem
 .DS_Store
 node_modules/
+.playwright-mcp/
 .vscode/
 pint.json
 
