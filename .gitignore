@@ -8,3 +8,6 @@ Gemfile.lock
 *.gem
 .DS_Store
 node_modules/
+.vscode/
+pint.json
+
