@@ -2,6 +2,9 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "esconelcoigueviejo-site",
   "compatibility_date": "2026-03-01",
+  "build": {
+    "command": "bundle exec jekyll build"
+  },
   "assets": {
     "directory": "_site"
   },
