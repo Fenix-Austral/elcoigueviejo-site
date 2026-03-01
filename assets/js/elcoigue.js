@@ -63,10 +63,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* ====== SMOOTH SCROLL PARA ANCLAS ====== */
   document
-    .querySelectorAll('a.page-scroll, a[href^="#"]')
+    .querySelectorAll('a[href^="#"]')
     .forEach(function (anchor) {
       anchor.addEventListener("click", function (e) {
-        var target = document.querySelector(this.getAttribute("href"));
+        var href = this.getAttribute("href");
+        // Ignorar enlaces vacíos o con atributos de Bootstrap (modales, carousels, etc.)
+        if (
+          href === "#" ||
+          this.hasAttribute("data-toggle") ||
+          this.hasAttribute("data-slide") ||
+          this.hasAttribute("data-dismiss")
+        ) {
+          return;
+        }
+        var target;
+        try {
+          target = document.querySelector(href);
+        } catch (err) {
+          console.warn("Invalid selector:", href, err);
+          return;
+        }
         if (target) {
           e.preventDefault();
           target.scrollIntoView({ behavior: "smooth" });
