@@ -1,0 +1,9 @@
+{
+  "name": "elcoigueviejo-site",
+  "version": "1.0.0",
+  "description": "Sitio Jekyll compatible con GitHub Pages y Cloudflare Pages",
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "deploy": "bundle exec jekyll build && wrangler deploy"
+  }
+}
