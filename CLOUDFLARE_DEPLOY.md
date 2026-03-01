@@ -4,22 +4,20 @@ Este documento explica cómo configurar y desplegar el sitio en Cloudflare Pages
 
 ## 🔧 Configuración en Cloudflare Pages Dashboard
 
-### Opción 1: Build y Deploy en un comando (Recomendado)
+### Configuración Recomendada
 
 En la configuración del proyecto en Cloudflare Pages:
 
 - **Framework preset:** None (o Jekyll si está disponible)
-- **Build command:** `npm run deploy`
+- **Build command:** `npm run build`
 - **Build output directory:** `_site`
 - **Root directory:** `/` (default)
 
-### Opción 2: Build y Deploy separados
+⚠️ **IMPORTANTE:** NO configures un "Deploy command". Cloudflare Pages despliega automáticamente el contenido de `_site/` después del build.
 
-- **Framework preset:** None
-- **Build command:** `npm run pages:build`
-- **Build output directory:** `_site`
-- **Deploy command:** `npm run pages:deploy`
-- **Root directory:** `/` (default)
+### ¿Por qué no usar `npm run deploy`?
+
+El comando `npm run deploy` incluye `npx wrangler deploy`, que es para despliegue manual desde tu máquina local. En Cloudflare Pages, el dashboard se encarga automáticamente del deployment una vez que el build se completa exitosamente.
 
 ## 📋 Requisitos del Entorno
 
@@ -39,22 +37,33 @@ npm run pages:build    # Solo construye (para CI/CD)
 npm run pages:deploy   # Solo despliega (requiere _site ya construido)
 ```
 
-## 📝 Proceso de Build
+## 📝 Proceso de Build en Cloudflare Pages
 
 El proceso de build en Cloudflare Pages sigue estos pasos:
 
 1. **Instalar dependencias de Node:** `npm install` (automático)
 2. **Instalar dependencias de Ruby:** `bundle install` (automático)
-3. **Ejecutar build command:** construye el sitio Jekyll con `bundle exec jekyll build`
-4. **Desplegar:** usa Wrangler para desplegar el contenido de `_site/`
+3. **Ejecutar build command:** `npm run build` → ejecuta `bundle exec jekyll build` → genera carpeta `_site/`
+4. **Desplegar:** Cloudflare Pages despliega automáticamente el contenido de `_site/` a su CDN
+
+⚠️ **Nota:** El comando `wrangler deploy` solo se usa para despliegues manuales desde tu máquina local, no en el dashboard de Cloudflare Pages.
 
 ## ⚠️ Problemas Comunes
 
 ### Error: "The directory specified by assets.directory does not exist: \_site"
 
-**Causa:** El sitio Jekyll no se construyó antes de intentar desplegar.
+**Causa:** El sitio Jekyll no se construyó antes de intentar desplegar con Wrangler.
 
-**Solución:** Asegúrate de que el **Build command** incluya `npm run build` o `npm run deploy`.
+**Solución:**
+
+- En Cloudflare Pages Dashboard: Usa solo `npm run build` como Build command
+- En despliegue manual local: Usa `npm run deploy` (que construye y despliega)
+
+### Error: "The name 'ASSETS' is reserved in Pages projects"
+
+**Causa:** El archivo `wrangler.jsonc` tenía un binding con nombre reservado.
+
+**Solución:** Ya está corregido. El `wrangler.jsonc` ahora no usa bindings reservados.
 
 ### Error: "bundle: command not found"
 
