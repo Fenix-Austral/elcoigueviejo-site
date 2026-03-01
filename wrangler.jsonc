@@ -3,7 +3,7 @@
   "name": "esconelcoigueviejo-site",
   "compatibility_date": "2026-03-01",
   "build": {
-    "command": "bundle exec jekyll build"
+    "command": "JEKYLL_ENV=production LANG=C.UTF-8 LC_ALL=C.UTF-8 bundle exec jekyll build"
   },
   "assets": {
     "directory": "_site"
