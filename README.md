@@ -189,11 +189,43 @@ Puedes desplegar el sitio en cualquier servicio de hosting estático, como:
 - AWS S3
 - Surge.sh
 
-Para GitHub Pages:
+### Despliegue en GitHub Pages
 
 1. Ve a Settings > Pages en tu repositorio
 2. Selecciona la rama `main` como fuente
 3. El sitio estará disponible en `https://tu-usuario.github.io/elcoigueviejo-v2/`
+
+### Despliegue en Cloudflare Pages
+
+Este sitio está configurado para desplegarse en Cloudflare Pages usando Wrangler.
+
+**Configuración en el Dashboard de Cloudflare Pages:**
+
+1. **Build command:** `npm run build` (construye el sitio Jekyll)
+2. **Build output directory:** `_site`
+3. **Build command (deploy):** `npm run pages:deploy` (despliega con Wrangler)
+
+O alternativamente, usa un solo comando:
+
+- **Build command:** `npm run deploy` (construye y despliega en un paso)
+
+**Scripts disponibles:**
+
+```bash
+npm run build          # Construye el sitio Jekyll
+npm run serve          # Sirve el sitio localmente
+npm run deploy         # Construye y despliega en Cloudflare
+npm run pages:build    # Solo construye (para CI/CD)
+npm run pages:deploy   # Solo despliega (requiere _site construido)
+```
+
+**Requisitos:**
+
+- Node.js y npm instalados
+- Ruby y Bundler instalados
+- Dependencias de Ruby: `bundle install`
+
+**Nota:** El archivo `wrangler.jsonc` está configurado para desplegar la carpeta `_site` en Cloudflare Workers.
 
 ## 📄 Archivos Clave
 

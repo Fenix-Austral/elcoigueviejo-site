@@ -2,6 +2,9 @@
   "name": "esconelcoigueviejo-site",
   "compatibility_date": "2026-03-01",
   "assets": {
-    "directory": "_site"
-  }
+    "directory": "_site",
+    "binding": "ASSETS"
+  },
+  // Configuración para Cloudflare Pages
+  "pages_build_output_dir": "_site"
 }

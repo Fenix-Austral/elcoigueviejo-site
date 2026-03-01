@@ -4,6 +4,9 @@
   "description": "Sitio Jekyll compatible con GitHub Pages y Cloudflare Pages",
   "scripts": {
     "build": "bundle exec jekyll build",
-    "deploy": "bundle exec jekyll build && wrangler deploy"
+    "serve": "bundle exec jekyll serve",
+    "deploy": "npm run build && npx wrangler deploy",
+    "pages:build": "bundle exec jekyll build",
+    "pages:deploy": "npx wrangler deploy"
   }
 }

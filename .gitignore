@@ -12,3 +12,11 @@ node_modules/
 .vscode/
 pint.json
 
+# Wrangler
+.wrangler/
+.dev.vars
+wrangler.toml.backup
+
+# Logs
+*.log
+npm-debug.log*
